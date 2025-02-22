@@ -30,7 +30,7 @@ class CarListView(ListView):
     model = Car
     queryset = Car.objects.select_related("manufacturer").order_by("model")
     template_name = "taxi/car_list.html"
-    context_object_name = "cars_list"
+    context_object_name = "car_list"
     paginate_by = 5
 
 

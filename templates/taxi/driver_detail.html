@@ -8,7 +8,7 @@
     {% for car in driver.cars.all %}
       <p>{{ car.model }}</p>
     {% empty %}
-     <p>No drivers!</p>
+     <p>No cars!</p>
   {% endfor %}
   </div>
 {% endblock %}
